@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Adam Sport — твой ритм, твои правила</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6.4.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Основной CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Лайтбокс (модальное окно для увеличения картинки) -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox__overlay"></div>
+    <div class="lightbox__content">
+      <button class="lightbox__close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" alt="" id="lightboxImg" class="lightbox__image">
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div class="header__top">
+        <div class="logo">ADAM SPORT</div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+          <i class="fa-regular fa-sun" id="themeIcon"></i>
+        </button>
+      </div>
+      <div class="header__contacts">
+        <div class="contact-badge glass">
+          <i class="fa-solid fa-phone"></i>
+          <span>8 928 642 39 29</span>
+        </div>
+        <div class="contact-badge glass">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Улица Умара Кадырова 21</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__content glass">
+        <h1 class="hero__title">Твой ритм. Твои правила.<br>Adam Sport.</h1>
+        <p class="hero__subtitle">Экипировка и инвентарь для тех, кто не останавливается</p>
+        <a href="#catalog" class="btn btn-accent hero__btn">
+          <i class="fa-solid fa-arrow-down"></i> Смотреть товары
+        </a>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <h2 class="section-title"><span class="glass glass--inline">🔥 Популярные товары</span></h2>
+        <div class="catalog__grid">
+          <!-- Карточка 1 -->
+          <div class="product-card glass">
+            <div class="product-card__image-wrapper">
+              <img src="https://news.store.rambler.ru/img/fb62cde06ea1d79a74c737f67e98fefa?img-1-resize=width%3A1280%2Cheight%3A1280%2Cfit%3Acover&img-format=auto" alt="Футбольный мяч" class="product-card__img">
+            </div>
+            <h3 class="product-card__title">Футбольный мяч</h3>
+            <p class="product-card__price">3 990 ₽</p>
+            <button class="btn btn-cart"><i class="fa-solid fa-cart-shopping"></i> В корзину</button>
+          </div>
+          <!-- Карточка 2 -->
+          <div class="product-card glass">
+            <div class="product-card__image-wrapper">
+              <img src="https://bestinfitness.ru/wp-content/uploads/2023/02/img_4889-e1695887241250.webp" alt="Беговая дорожка" class="product-card__img">
+            </div>
+            <h3 class="product-card__title">Беговая дорожка</h3>
+            <p class="product-card__price">49 990 ₽</p>
+            <button class="btn btn-cart"><i class="fa-solid fa-cart-shopping"></i> В корзину</button>
+          </div>
+          <!-- Карточка 3 -->
+          <div class="product-card glass">
+            <div class="product-card__image-wrapper">
+              <img src="https://strongpeople.ru/wa-data/public/shop/products/15/16/11615/images/44555/44555.970.jpg" alt="Гантели" class="product-card__img">
+            </div>
+            <h3 class="product-card__title">Гантели (пара)</h3>
+            <p class="product-card__price">5 490 ₽</p>
+            <button class="btn btn-cart"><i class="fa-solid fa-cart-shopping"></i> В корзину</button>
+          </div>
+          <!-- Карточка 4 -->
+          <div class="product-card glass">
+            <div class="product-card__image-wrapper">
+              <img src="https://beloptovik.ru/upload/resize_cache/iblock/22e/8p47h05eo8lorsaa9kedml3gi7ukj5q6/855_855_1ec831cfbcd54cd2334de3e683a0a48d5/13860%205.png" alt="Спортивная бутылка" class="product-card__img">
+            </div>
+            <h3 class="product-card__title">Спортивная бутылка</h3>
+            <p class="product-card__price">1 290 ₽</p>
+            <button class="btn btn-cart"><i class="fa-solid fa-cart-shopping"></i> В корзину</button>
+          </div>
+          <!-- Карточка 5 -->
+          <div class="product-card glass">
+            <div class="product-card__image-wrapper">
+              <img src="https://static.mvideo.ru/media/Promotions/Promo_Page/2022/April/obzor-top-9-fitnes-gadzhetov-v-2022-godu/obzor-top-9-fitnes-gadzhetov-v-2022-godu-top1-m.png" alt="Фитнес-браслет" class="product-card__img">
+            </div>
+            <h3 class="product-card__title">Фитнес-браслет</h3>
+            <p class="product-card__price">3 490 ₽</p>
+            <button class="btn btn-cart"><i class="fa-solid fa-cart-shopping"></i> В корзину</button>
+          </div>
+          <!-- Карточка 6 -->
+          <div class="product-card glass">
+            <div class="product-card__image-wrapper">
+              <img src="https://training365.ru/wp-content/uploads/2020/02/%D0%B1%D0%B5%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8-New-Balance-FuelCell-Impulse.jpg" alt="Кроссовки" class="product-card__img">
+            </div>
+            <h3 class="product-card__title">Кроссовки</h3>
+            <p class="product-card__price">7 990 ₽</p>
+            <button class="btn btn-cart"><i class="fa-solid fa-cart-shopping"></i> В корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container contacts__wrapper glass">
+        <div class="contacts__info">
+          <h2 class="contacts__title">Ждём вас в магазине</h2>
+          <div class="contacts__detail">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Улица Умара Кадырова 21</span>
+          </div>
+          <div class="contacts__detail">
+            <i class="fa-solid fa-phone"></i>
+            <span>8 928 642 39 29</span>
+          </div>
+          <div class="contacts__detail">
+            <i class="fa-regular fa-clock"></i>
+            <span>Ежедневно 10:00 – 21:00</span>
+          </div>
+        </div>
+        <div class="contacts__map glass">
+          <!-- Интерактивная Google Карта -->
+<iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.359523031937!2d45.67868707689053!3d43.31590397111659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4051d5c4e4b4b4b%3A0x4b4b4b4b4b4b4b4b!2z0YPQuy4g0KPQvNCw0YDQsCDQmtCw0LTRi9GA0L7QstCwLCAyMSwg0JPRgNC-0LfQvdGL0Lk!5e0!3m2!1sru!2sru!4v1712345678901!5m2!1sru!2sru" 
+  width="100%" 
+  height="450" 
+  style="border:0; border-radius: 24px;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <div class="container footer__inner">
+      <p>Adam Sport © 2026 — энергия движения</p>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      // --- Переключение темы ---
+      const body = document.body;
+      const themeToggle = document.getElementById('themeToggle');
+      const themeIcon = document.getElementById('themeIcon');
+      
+      function updateIcon() {
+        if (body.classList.contains('dark-theme')) {
+          themeIcon.className = 'fa-regular fa-moon';
+        } else {
+          themeIcon.className = 'fa-regular fa-sun';
+        }
+      }
+      
+      themeToggle.addEventListener('click', function() {
+        body.classList.toggle('dark-theme');
+        updateIcon();
+        try {
+          localStorage.setItem('adamSportTheme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+        } catch(e) {}
+      });
+      
+      try {
+        const savedTheme = localStorage.getItem('adamSportTheme');
+        if (savedTheme === 'dark') {
+          body.classList.add('dark-theme');
+        } else if (savedTheme === 'light') {
+          body.classList.remove('dark-theme');
+        }
+      } catch(e) {}
+      updateIcon();
+      
+      // Плавный скролл
+      const anchorLink = document.querySelector('a[href="#catalog"]');
+      if (anchorLink) {
+        anchorLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector('#catalog');
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      }
+
+      // --- Лайтбокс для увеличения картинок ---
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const overlay = document.querySelector('.lightbox__overlay');
+      
+      // Функция открытия лайтбокса
+      function openLightbox(src, alt) {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt;
+        lightbox.classList.add('lightbox--visible');
+        document.body.style.overflow = 'hidden'; // запрет прокрутки фона
+      }
+      
+      // Функция закрытия
+      function closeLightbox() {
+        lightbox.classList.remove('lightbox--visible');
+        document.body.style.overflow = '';
+        // Небольшая задержка перед очисткой src, чтобы не было моргания при анимации
+        setTimeout(() => {
+          if (!lightbox.classList.contains('lightbox--visible')) {
+            lightboxImg.src = '';
+          }
+        }, 300);
+      }
+      
+      // Делегирование: клик по любой картинке товара
+      document.addEventListener('click', function(e) {
+        const img = e.target.closest('.product-card__img');
+        if (!img) return;
+        e.preventDefault();
+        openLightbox(img.src, img.alt);
+      });
+      
+      // Закрытие по клику на крестик
+      lightboxClose.addEventListener('click', closeLightbox);
+      
+      // Закрытие по клику на оверлей (тёмный фон)
+      overlay.addEventListener('click', closeLightbox);
+      
+      // Закрытие по клавише Escape
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('lightbox--visible')) {
+          closeLightbox();
+        }
+      });
+      
+    })();
+  </script>
+</body>
+</html>
